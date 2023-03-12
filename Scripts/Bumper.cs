@@ -21,6 +21,7 @@ public class Bumper : MonoBehaviour
         if (collision.gameObject.tag == "Ball")
         {
             Vector3 direction = transform.localPosition - ball.transform.localPosition;
+            direction.Normalize();
 
             _ballRigidbody.AddForce(direction * _bounceForce * bounciness);
         }
