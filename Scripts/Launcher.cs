@@ -11,6 +11,12 @@ public class Launcher : MonoBehaviour
     private void Start()
     {
         _ballRigidbody = ball.GetComponent<Rigidbody>();
+
+        if (gameObject.tag == "Spawner")
+        {
+            bounciness = Random.Range(450f, 2000f);
+            Debug.Log(bounciness);
+        }
     }
 
     private void OnCollisionStay(Collision collision)
