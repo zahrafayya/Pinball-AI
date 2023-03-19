@@ -6,7 +6,6 @@ using UnityEngine;
 public class Bumper : MonoBehaviour
 {
     [SerializeField] private GameObject ball;
-    [SerializeField] private float bounciness;
     private float _bounceForce;
     private Rigidbody _ballRigidbody;
 
@@ -16,14 +15,11 @@ public class Bumper : MonoBehaviour
         _ballRigidbody = ball.GetComponent<Rigidbody>();
     }
 
-    private void OnCollisionStay(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Ball")
-        {
-            Vector3 direction = transform.localPosition - ball.transform.localPosition;
-            direction.Normalize();
+        Vector3 direction = transform.localPosition - ball.transform.localPosition;
+        direction.Normalize();
 
-            _ballRigidbody.AddForce(direction * _bounceForce * bounciness);
-        }
+        _ballRigidbody.AddForce(direction * _bounceForce * 8, ForceMode.Impulse);
     }
 }

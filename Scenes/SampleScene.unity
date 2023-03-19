@@ -561,7 +561,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1674280212}
-  bounciness: 10
 --- !u!1 &415199122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,7 +1290,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1674280212}
-  bounciness: 20
 --- !u!1 &818569004
 GameObject:
   m_ObjectHideFlags: 0
@@ -2333,7 +2331,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1674280212}
-  bounciness: 10
 --- !u!1 &1274510430
 GameObject:
   m_ObjectHideFlags: 0
@@ -2445,7 +2442,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1674280212}
-  bounciness: 20
 --- !u!1 &1343100168
 GameObject:
   m_ObjectHideFlags: 0
@@ -2558,7 +2554,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1674280212}
-  bounciness: 10
 --- !u!1 &1419711790
 GameObject:
   m_ObjectHideFlags: 0
@@ -2799,7 +2794,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1674280212}
-  bounciness: 30
 --- !u!1 &1461460904
 GameObject:
   m_ObjectHideFlags: 0
@@ -3106,7 +3100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1674280212}
-  bounciness: 30
 --- !u!1 &1571307454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3414,7 +3407,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1674280212}
-  bounciness: 30
 --- !u!1 &1674280212
 GameObject:
   m_ObjectHideFlags: 0
@@ -3506,7 +3498,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674280212}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 3.06, z: 0}
   m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3738,7 +3730,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1674280212}
-  bounciness: 30
 --- !u!1 &1917110822
 GameObject:
   m_ObjectHideFlags: 0
@@ -3888,7 +3879,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1674280212}
-  bounciness: 30
 --- !u!1 &1985115181
 GameObject:
   m_ObjectHideFlags: 0
@@ -5146,7 +5136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1674280212}
-  bounciness: 800
+  bounciness: 80
 --- !u!4 &7984727408995201312
 Transform:
   m_ObjectHideFlags: 0
@@ -5242,7 +5232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1674280212}
-  bounciness: 2000
+  bounciness: 150
 --- !u!4 &8829371864852317118
 Transform:
   m_ObjectHideFlags: 0

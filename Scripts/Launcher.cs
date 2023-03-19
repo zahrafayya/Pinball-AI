@@ -14,16 +14,13 @@ public class Launcher : MonoBehaviour
 
         if (gameObject.tag == "Spawner")
         {
-            bounciness = Random.Range(450f, 2000f);
+            bounciness = Random.Range(10f, 120f);
             Debug.Log(bounciness);
         }
     }
 
-    private void OnCollisionStay(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Ball")
-        {
-            _ballRigidbody.AddForce(transform.up * bounciness);
-        }
+        _ballRigidbody.AddForce(Vector3.up * bounciness, ForceMode.Impulse);
     }
 }
