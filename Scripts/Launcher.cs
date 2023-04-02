@@ -14,7 +14,7 @@ public class Launcher : MonoBehaviour
 
         if (gameObject.tag == "Spawner")
         {
-            bounciness = Random.Range(10f, 120f);
+            bounciness = Random.Range(10f, 70f);
             Debug.Log(bounciness);
         }
     }
