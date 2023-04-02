@@ -363,8 +363,10 @@ GameObject:
   - component: {fileID: 367324215}
   - component: {fileID: 367324214}
   - component: {fileID: 367324213}
+  - component: {fileID: 367324217}
+  - component: {fileID: 367324218}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: LeftPaddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -442,13 +444,47 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367324212}
   m_LocalRotation: {x: -0.60876137, y: -0, z: -0, w: 0.7933534}
-  m_LocalPosition: {x: 0.39, y: 2.1943, z: -0.9728}
+  m_LocalPosition: {x: 0.39, y: 2.1943002, z: -0.9727998}
   m_LocalScale: {x: 0.7, y: 0.5930669, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1172553889}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -75, y: 0, z: 0}
+--- !u!95 &367324217
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367324212}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 341a1f2be9dee1c4ca00613e42413c03, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &367324218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367324212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abef8213057a9dd4cb1833a523ca002f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballRigidbody: {fileID: 1674280217}
+  anim: {fileID: 367324217}
 --- !u!1 &393841998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1637,8 +1673,10 @@ GameObject:
   - component: {fileID: 953813025}
   - component: {fileID: 953813024}
   - component: {fileID: 953813023}
+  - component: {fileID: 953813027}
+  - component: {fileID: 953813028}
   m_Layer: 0
-  m_Name: Capsule (1)
+  m_Name: RightPaddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1723,6 +1761,40 @@ Transform:
   m_Father: {fileID: 1172553889}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 75, y: 0, z: 0}
+--- !u!95 &953813027
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953813022}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 69f1fbe1e0251c546bd49604dfdd7c85, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &953813028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953813022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abef8213057a9dd4cb1833a523ca002f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballRigidbody: {fileID: 1674280217}
+  anim: {fileID: 953813027}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2147,6 +2219,7 @@ GameObject:
   - component: {fileID: 1172553889}
   - component: {fileID: 1172553891}
   - component: {fileID: 1172553890}
+  - component: {fileID: 1172553892}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -2187,7 +2260,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  targetTransform: {fileID: 0}
+  leftPaddle: {fileID: 367324212}
+  rightPaddle: {fileID: 953813022}
+  ballTransfrom: {fileID: 1674280216}
+  anim: {fileID: 367324217}
+  anim2: {fileID: 953813027}
 --- !u!114 &1172553891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2201,8 +2278,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 1
-    NumStackedVectorObservations: 1
+    VectorObservationSize: 6
+    NumStackedVectorObservations: 5
     m_ActionSpec:
       m_NumContinuousActions: 0
       BranchSizes: 0200000002000000
@@ -2213,12 +2290,26 @@ MonoBehaviour:
   m_Model: {fileID: 0}
   m_InferenceDevice: 0
   m_BehaviorType: 0
-  m_BehaviorName: My Behavior
+  m_BehaviorName: ControlPaddle
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
   m_DeterministicInference: 0
   m_ObservableAttributeHandling: 0
+--- !u!114 &1172553892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172553888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecisionPeriod: 5
+  TakeActionsBetweenDecisions: 1
 --- !u!1 &1184415972
 GameObject:
   m_ObjectHideFlags: 0
@@ -5136,7 +5227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1674280212}
-  bounciness: 80
+  bounciness: 35
 --- !u!4 &7984727408995201312
 Transform:
   m_ObjectHideFlags: 0
