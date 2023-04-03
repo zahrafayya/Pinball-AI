@@ -4555,10 +4555,17 @@ GameObject:
   - component: {fileID: 367324215}
   - component: {fileID: 367324214}
   - component: {fileID: 367324213}
+<<<<<<< HEAD
   - component: {fileID: 367324218}
   - component: {fileID: 367324217}
   m_Layer: 0
   m_Name: LeftFlipper
+=======
+  - component: {fileID: 367324217}
+  - component: {fileID: 367324218}
+  m_Layer: 0
+  m_Name: LeftPaddle
+>>>>>>> 2c70f4a2ad5c08bacfe1d51c4e7bacf3bdd05c07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4636,20 +4643,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367324212}
   m_LocalRotation: {x: -0.60876137, y: -0, z: -0, w: 0.7933534}
-  m_LocalPosition: {x: 0.39, y: 2.1943, z: -0.9728}
+  m_LocalPosition: {x: 0.39, y: 2.1943002, z: -0.9727998}
   m_LocalScale: {x: 0.7, y: 0.5930669, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1172553889}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -75, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!59 &367324217
 HingeJoint:
+=======
+--- !u!95 &367324217
+Animator:
+  serializedVersion: 5
+>>>>>>> 2c70f4a2ad5c08bacfe1d51c4e7bacf3bdd05c07
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367324212}
+<<<<<<< HEAD
   m_ConnectedBody: {fileID: 886009261}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.99999934, z: 0}
@@ -4681,11 +4695,28 @@ HingeJoint:
   m_ConnectedMassScale: 1
 --- !u!54 &367324218
 Rigidbody:
+=======
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 341a1f2be9dee1c4ca00613e42413c03, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &367324218
+MonoBehaviour:
+>>>>>>> 2c70f4a2ad5c08bacfe1d51c4e7bacf3bdd05c07
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367324212}
+<<<<<<< HEAD
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -4792,6 +4823,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 388588319}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abef8213057a9dd4cb1833a523ca002f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballRigidbody: {fileID: 1674280217}
+  anim: {fileID: 367324217}
+>>>>>>> 2c70f4a2ad5c08bacfe1d51c4e7bacf3bdd05c07
 --- !u!1 &393841998
 GameObject:
   m_ObjectHideFlags: 0
@@ -9263,7 +9303,6 @@ Transform:
   - {fileID: 1917110823}
   - {fileID: 1172553889}
   - {fileID: 1006412275}
-  - {fileID: 1430238623}
   m_Father: {fileID: 2053970553}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10310,10 +10349,17 @@ GameObject:
   - component: {fileID: 953813025}
   - component: {fileID: 953813024}
   - component: {fileID: 953813023}
+<<<<<<< HEAD
   - component: {fileID: 953813028}
   - component: {fileID: 953813027}
   m_Layer: 0
   m_Name: RightFlipper
+=======
+  - component: {fileID: 953813027}
+  - component: {fileID: 953813028}
+  m_Layer: 0
+  m_Name: RightPaddle
+>>>>>>> 2c70f4a2ad5c08bacfe1d51c4e7bacf3bdd05c07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10398,13 +10444,20 @@ Transform:
   m_Father: {fileID: 1172553889}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 75, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!59 &953813027
 HingeJoint:
+=======
+--- !u!95 &953813027
+Animator:
+  serializedVersion: 5
+>>>>>>> 2c70f4a2ad5c08bacfe1d51c4e7bacf3bdd05c07
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953813022}
+<<<<<<< HEAD
   m_ConnectedBody: {fileID: 1324835933}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.99999976, z: 0}
@@ -10436,11 +10489,28 @@ HingeJoint:
   m_ConnectedMassScale: 1
 --- !u!54 &953813028
 Rigidbody:
+=======
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 69f1fbe1e0251c546bd49604dfdd7c85, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &953813028
+MonoBehaviour:
+>>>>>>> 2c70f4a2ad5c08bacfe1d51c4e7bacf3bdd05c07
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953813022}
+<<<<<<< HEAD
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -10450,6 +10520,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+=======
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abef8213057a9dd4cb1833a523ca002f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballRigidbody: {fileID: 1674280217}
+  anim: {fileID: 953813027}
+>>>>>>> 2c70f4a2ad5c08bacfe1d51c4e7bacf3bdd05c07
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -12455,6 +12534,7 @@ GameObject:
   - component: {fileID: 1172553889}
   - component: {fileID: 1172553891}
   - component: {fileID: 1172553890}
+  - component: {fileID: 1172553892}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -12499,10 +12579,18 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+<<<<<<< HEAD
   LeftFlipper: {fileID: 0}
   RightFlipper: {fileID: 0}
   FlipperMotorVelocity: 0
   FlipperMotorForce: 0
+=======
+  leftPaddle: {fileID: 367324212}
+  rightPaddle: {fileID: 953813022}
+  ballTransfrom: {fileID: 1674280216}
+  anim: {fileID: 367324217}
+  anim2: {fileID: 953813027}
+>>>>>>> 2c70f4a2ad5c08bacfe1d51c4e7bacf3bdd05c07
 --- !u!114 &1172553891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12516,8 +12604,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 1
-    NumStackedVectorObservations: 1
+    VectorObservationSize: 11
+    NumStackedVectorObservations: 5
     m_ActionSpec:
       m_NumContinuousActions: 0
       BranchSizes: 0200000002000000
@@ -12527,13 +12615,27 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 0}
   m_InferenceDevice: 0
-  m_BehaviorType: 0
-  m_BehaviorName: My Behavior
+  m_BehaviorType: 1
+  m_BehaviorName: ControlPaddle
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
   m_DeterministicInference: 0
   m_ObservableAttributeHandling: 0
+--- !u!114 &1172553892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172553888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecisionPeriod: 5
+  TakeActionsBetweenDecisions: 1
 --- !u!1 &1184415972
 GameObject:
   m_ObjectHideFlags: 0
@@ -15024,6 +15126,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419711790}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 --- !u!1 &1430238622
 GameObject:
   m_ObjectHideFlags: 0
@@ -15460,6 +15563,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450355284}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+=======
+>>>>>>> 2c70f4a2ad5c08bacfe1d51c4e7bacf3bdd05c07
 --- !u!1 &1459578727
 GameObject:
   m_ObjectHideFlags: 0
@@ -18504,7 +18609,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674280212}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.06, z: 0}
+  m_LocalPosition: {x: 0, y: 3.0600002, z: 0}
   m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23129,7 +23234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1674280212}
-  bounciness: 80
+  bounciness: 35
 --- !u!4 &7984727408995201312
 Transform:
   m_ObjectHideFlags: 0
