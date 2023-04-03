@@ -13,6 +13,9 @@ public class ControlPaddle : Agent
     [SerializeField] private Transform ballTransfrom;
     [SerializeField] private Animator anim;
     [SerializeField] private Animator anim2;
+
+    private bool leftIsUp;
+    private bool rightIsUp;
     public override void OnEpisodeBegin()
     {
         ballTransfrom.localPosition = new Vector3(0, 3.06f, 0);
@@ -22,17 +25,27 @@ public class ControlPaddle : Agent
     {
         if (actions.DiscreteActions[0] == 1)
         {
-            SetReward(-5f);
             anim.SetTrigger("IsMoved");
+            leftIsUp = true;
+            SetReward(-1f);
         }
-        else anim.ResetTrigger("IsMoved");
+        else if (leftIsUp)
+        {
+            anim.ResetTrigger("IsMoved");
+            leftIsUp = false;
+        }
         
         if (actions.DiscreteActions[1] == 1)
         {
-            SetReward(-5f);
             anim2.SetTrigger("IsMoved");
+            rightIsUp = true;
+            SetReward(-1f);
         }
-        else anim2.ResetTrigger("IsMoved");
+        else if (rightIsUp)
+        {
+            anim2.ResetTrigger("IsMoved");
+            rightIsUp = false;
+        }
 
         Debug.Log("action 1:" + actions.DiscreteActions[0]);
         Debug.Log("action 2:" + actions.DiscreteActions[1]);
@@ -53,6 +66,7 @@ public class ControlPaddle : Agent
     public void Fall()
     {
         EndEpisode();
+        SetReward(-5f);
     }
     public override void Heuristic(in ActionBuffers actionsOut)
     {
